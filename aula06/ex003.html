@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {background-color: rgb(61, 61, 90);
+        color: white;
+        font: normal 20pt Arial; 
+        }
+        h1{
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head> 
+<body>
+    <h1>Olá Mundo!!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        /*
+        window.alert("Minha primeira mensagem!");
+        window.confirm("Está gostando de Javascript?");
+        */
+        let n1 = window.prompt("Insira um número");
+        let n2 = window.prompt("Digite outro número");
+        let soma = Number.parseFloat(n1) + Number.parseFloat(n2);
+        window.alert(`A soma dos números ${n1} e ${n2} é ${soma}`);
+        // n + n pra adição
+        // s + s para concatenação
+    </script>
+</body>
+</html>

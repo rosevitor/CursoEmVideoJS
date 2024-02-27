@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF</title>
+    <style>
+        body{background:rgb(95, 95, 95);
+            color:white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificação de país</h1>
+    <p>Insira seu país de residencia: <input name="txtpais" id="txtpais"></p>
+    <p><input type="button" value="Verificar" onclick="verificarpais()"></p>
+    <div id="res"></div>
+</body>
+<script>        
+    function verificarpais(){
+        let txtp = window.document.querySelector('input#txtpais')
+        let res = window.document.querySelector('div#res')
+        let pais = txtp.value
+        res.innerHTML=`<p>Seu país de residência é <strong>${pais}</strong></p>`
+        if(pais=="Brasil"){
+            res.innerHTML+="<p>Você é brasileiro</p>"
+        } else {
+            res.innerHTML+="<p>Você é estrangeiro</p>"
+        }
+    }
+</script>
+</html>
